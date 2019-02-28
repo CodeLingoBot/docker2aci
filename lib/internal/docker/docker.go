@@ -84,7 +84,7 @@ func getHomeDir() string {
 	return os.Getenv("HOME")
 }
 
-// GetDockercfgAuth reads a ~/.dockercfg file and returns the username and password
+// GetAuthInfo reads a ~/.dockercfg file and returns the username and password
 // of the given docker index server.
 func GetAuthInfo(indexServer string) (string, string, error) {
 	// official docker registry
